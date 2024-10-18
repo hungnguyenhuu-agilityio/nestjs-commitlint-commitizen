@@ -17,7 +17,16 @@
 ## Project setup
 
 ```bash
-pnpm install
+# Install the module
+$ pnpm install
+
+# Update the environment file
+# Access to .env file or create if not existed
+# your_environment should be [local, staging, production]
+$ NODE_ENV=your_environment
+
+# Expose port for application
+$ PORT=your_port
 ```
 
 ## Compile and run the project
