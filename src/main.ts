@@ -1,9 +1,9 @@
 import { NestFactory } from '@nestjs/core';
 import { Logger, LogLevel } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 import { Environment } from './config/environment.enum';
-import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { SwaggerConfig } from './core/constants/swagger.constant';
 
 async function bootstrap() {
