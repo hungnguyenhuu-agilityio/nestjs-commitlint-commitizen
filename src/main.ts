@@ -24,7 +24,8 @@ async function bootstrap() {
     .setDescription(SwaggerConfig.description)
     .setVersion(SwaggerConfig.version)
     .build();
-  const documentFactory = () => SwaggerModule.createDocument(app, swaggerConfig);
+  const documentFactory = () =>
+    SwaggerModule.createDocument(app, swaggerConfig);
   SwaggerModule.setup('swagger', app, documentFactory);
 
   await app.listen(configService.get<number>('PORT') || 3000);

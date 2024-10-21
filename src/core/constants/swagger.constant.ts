@@ -9,5 +9,5 @@ export const SwaggerConfig = {
   description: 'Boilerplate description for NestJS',
 
   // Giving the version for the application
-  version: '1.0'
-}
+  version: '1.0',
+};
